@@ -916,7 +916,7 @@ public:
         return data()[m_length - 1];
     }
 
-    explicit constexpr inline operator std::basic_string_view<value_type>() {
+    constexpr inline operator std::basic_string_view<value_type>() const {
         return std::string_view(data(), m_length);
     }
 
